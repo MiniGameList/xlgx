@@ -1,0 +1,8 @@
+version: '3'
+services:
+  next-demo:
+    image: xglx:latest
+    container_name: xglx
+    ports:
+      - "3002:80"
+    restart: always

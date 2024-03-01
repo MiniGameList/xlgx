@@ -1,26 +1,26 @@
-name: Build and Deploy
-on:
-  push:
-    branches:
-      - master
-permissions:
-  contents: write
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-#      - name: Build
-#        run: |
-#          # 在这里添加构建你的Cocos Creator项目的命令
-#          # 例如：cocos run -p web
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: dist
+#name: Build and Deploy
+#on:
+#  push:
+#    branches:
+#      - master
+#permissions:
+#  contents: write
+#jobs:
+#  build-and-deploy:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v3
+#        with:
+#          persist-credentials: false
+##      - name: Build
+##        run: |
+##          # 在这里添加构建你的Cocos Creator项目的命令
+##          # 例如：cocos run -p web
+#
+#      - name: Deploy
+#        uses: JamesIves/github-pages-deploy-action@v4
+#        with:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          BRANCH: gh-pages # The branch the action should deploy to.
+#          FOLDER: dist
